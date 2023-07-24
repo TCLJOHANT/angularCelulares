@@ -1,0 +1,30 @@
+<form action="" (ngSubmit)="onSubmit()">
+    <h2>agregar nuevo celular</h2>
+    <div class="">
+        <label for="">id</label>
+        <input type="text" name="id" id="" [(ngModel)]="id"> 
+    </div>
+    <br>
+    <div class="">
+        <label for="">marca</label>
+        <input type="text" name="marca" id="" [(ngModel)]="marca"> {{marca}}
+    </div>
+    <br>
+    <div class="">
+        <label for="">modelo del celular</label>
+        <input type="text" name="modelo" id="" [(ngModel)]="modelo">
+    </div>
+    <br>
+    <div class="">
+        <label >precio</label>
+        <input type="text" name="precio" id="" [(ngModel)]="precio">
+
+    </div>
+    <br>
+    <div class="">
+        <label for="">cantidad</label>
+        <input type="text" name="cantidad" id="" [(ngModel)]="cantidad">
+
+    </div>
+    <button type="submit">crear</button>
+</form>

@@ -1,0 +1,13 @@
+<div class="">
+
+    <!-- para pasar infromacion de un componente a otro
+     debo referenciar a propìedad de entrada  [celular]="celular" -->
+    <app-celular 
+     *ngFor="let celular of celulares" 
+     [celular]="celular"
+     (eliminarCelular)="eliminarCelular($event)"
+     (palancaCelular)="palancaCelular($event)"> <!--event contiene a celular-->
+        <!-- <ul class="" *ngFor="let especificacion of celular.especificacionesRelevantes" ></ul>  -->
+    </app-celular>
+    <app-total mensaje="Total por pagar:" [total]="total" ></app-total>
+</div>

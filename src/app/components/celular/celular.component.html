@@ -1,0 +1,46 @@
+<div class="fila" [ngClass]="{'completado':celular.completado}">
+    <div class="">
+      
+        <input type="checkbox" [checked]="celular.completado" (change)="onPalanca(celular)">
+        {{celular.id}}
+    </div>
+    <div class="">
+        <p>Marca</p>
+        {{celular.marca}}
+    </div> 
+    <div class="">
+        <p>Modelo</p>
+        {{celular.modelo}}
+    </div>
+    <div class="">
+        <p>precio de salida</p>
+        {{celular.precio|currency}}
+    </div>
+    <div class="">
+      <p>cantidad</p>
+      {{celular.cantidad}}
+    </div>
+    <!-- <ul>
+        <p>caracteristicas principales</p>
+        <li *ngFor="let especificacion of celular.especificacionesRelevantes">
+          {{especificacion.cpu}}
+        </li>
+        <li *ngFor="let especificacion of celular.especificacionesRelevantes">
+          {{especificacion.ram}}
+        </li>
+        <li *ngFor="let especificacion of celular.especificacionesRelevantes">
+          {{especificacion.almacenamiento}}
+        </li>
+        <li *ngFor="let especificacion of celular.especificacionesRelevantes">
+          {{especificacion.bateria}}
+        </li>
+        <li *ngFor="let especificacion of celular.especificacionesRelevantes">
+          {{especificacion.tegnologiaDysplay}}
+        </li>
+        <li *ngFor="let especificacion of celular.especificacionesRelevantes">
+          {{especificacion.resolucion}}
+        </li>
+      </ul>  -->
+      <!--paso objeto celular-->
+       <button class="btnEliminar" (click)="eliminar(celular)">Eliminar</button> 
+</div>

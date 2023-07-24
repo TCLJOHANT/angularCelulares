@@ -1,0 +1,15 @@
+.fila{
+    display:flex;
+}
+.fila div{
+    margin:20px;
+}
+.completado{
+    color: #ccc;
+    text-decoration: line-through;
+}
+.btnEliminar{
+    background-color: rgba(206, 52, 52, 0.706);
+    height: 100%;
+    margin-top: 3%;
+}
